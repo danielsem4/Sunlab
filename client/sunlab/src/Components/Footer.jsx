@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import Whatsapp from "./Whatsapp";
 import Translator from "../Components/Translation/Translator";
+import logo from "../assets/images/Logo2.png";
 
 const Footer = () => {
   return (
@@ -29,14 +30,15 @@ const Footer = () => {
             <Whatsapp />
           </a>
         </SocialMedia>
+        <Logo src={logo} alt="Logo" />
       </FooterContent>
       <LegalSection>
         <div>
-          <LegalLink href="#">Terms & Conditions</LegalLink>
-          <LegalLink href="#">Privacy</LegalLink>
-          <LegalLink href="#">Security</LegalLink>
+          <LegalLink>Terms & Conditions</LegalLink>
+          <LegalLink>Privacy</LegalLink>
+          <LegalLink>Security</LegalLink>
         </div>
-        <div>©2023 Klutz. All rights reserved.</div>
+        <div>©2023 danielsem4. All rights reserved.</div>
       </LegalSection>
     </FooterContainer>
   );
@@ -62,6 +64,17 @@ const FooterContent = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+  }
+`;
+
+const Logo = styled.img`
+  padding: 0.2;
+  width: 5.5rem;
+  height: 5.5rem;
+
+  @media (max-width: 768px) {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 `;
 

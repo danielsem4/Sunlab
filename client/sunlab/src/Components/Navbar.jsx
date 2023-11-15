@@ -101,6 +101,11 @@ const Logo = styled.img`
   padding: 0.2;
   width: 8rem;
   height: 8rem;
+
+  @media (max-width: 768px) {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
 `;
 
 const NavItems = styled.div`

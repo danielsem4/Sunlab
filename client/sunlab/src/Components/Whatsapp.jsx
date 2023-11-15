@@ -6,6 +6,7 @@ const Whatsapp = () => {
     <ReactWhatsapp
       number="+995577493767"
       message="Hello can you provide me more details, გამარჯობა შეგიძლიათ დაწვრილებით მომაწოდოთ"
+      style={{ backgroundColor: "transparent" }}
     >
       <FaWhatsapp />
     </ReactWhatsapp>
